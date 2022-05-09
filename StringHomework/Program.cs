@@ -8,7 +8,6 @@ foreach (var s in search)
 {
     WithSubstring(input, s);
     WithConcat(input, s);
-    WithToCharArray(input, s);  
 }
 
 static void WithSubstring(string input, string search)
@@ -33,12 +32,4 @@ static void WithConcat(string input, string search)
     }
     var res = builder.ToString();
     Console.WriteLine($"WithConcat {input}: {res}");
-}
-static void WithToCharArray(string input, string search)
-{
-    var res = String.Empty;   
-    var startIndex = input.IndexOf(search);
-    if (startIndex != -1)    
-        res = new string(input.ToCharArray(startIndex, search.Length));
-    Console.WriteLine($"WithToCharArray {input}: {res}");
 }
