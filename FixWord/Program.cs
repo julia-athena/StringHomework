@@ -1,12 +1,12 @@
-﻿var input = "рпроцессо";
+﻿using System;
+
+var input = "рпроцессо";
 
 
 var chars = input.ToCharArray();    
 for (int i = 0; i < chars.Length-1; i++)
 {
-    var temp = chars[i];
-    chars[i] = chars[i + 1];
-    chars[i + 1] = temp;
+    (chars[i], chars[i+1]) = (chars[i+1], chars[i]);
 }
 
 var res = new string(chars);

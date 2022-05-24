@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите: <государство> <столица>");
+﻿using System;
+
+Console.WriteLine("Введите: <государство> <столица>");
 var input = Console.ReadLine(); 
 var splitted = input.Split(' ');    
 

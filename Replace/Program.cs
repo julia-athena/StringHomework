@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 var input = "вирус";
 var aim = "фокус";
 
