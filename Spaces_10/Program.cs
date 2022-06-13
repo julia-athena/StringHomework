@@ -22,6 +22,7 @@ static string AddSpaces(string input, int length)
         {
             builder.Insert(i, ' ');
             delta--;
+            while (builder[i] == ' ') i++; 
         }
 
         i++;
