@@ -11,10 +11,9 @@ if (input.Length != aim.Length)
 }
 
 var chars = input.ToCharArray();
-for (int i = 0; i < chars.Length; i++)
+for (var i = 0; i < chars.Length; i++)
 {
-    if (chars[i] != aim[i])
-        chars[i] = aim[i];
+    chars[i] = aim[i];
 }
 
 var res = new string(chars);
